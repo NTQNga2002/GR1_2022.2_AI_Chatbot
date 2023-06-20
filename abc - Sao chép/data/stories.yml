@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+
+- story: aws_the_price
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_price
+  - action: action_aws_price
+
+- story: aws_the_price path 2
+  steps: 
+  - intent: ask_price
+  - action: action_aws_price

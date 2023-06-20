@@ -1,0 +1,44 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - xin chào bạn
+    - chào
+    - chào Nana shop
+    - chào Shop
+    - Shop cho mình hỏi
+    - Alo
+    - Shop ơi
+    - Xin chào
+    - Bạn có thể tư vấn cho mình được không
+    - Cho hỏi với shop
+    - cho mình hỏi được không
+    - chào Shop, cho mình hỏi 
+  
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Tạm biệt
+    - Tạm biệt bạn
+    - Cảm ơn Shop
+
+- intent: ask_price
+  examples: |
+    - [Sản phẩm A](product_name) có giá bao nhiêu
+    - giá của [sản phẩm B](product_name) là bao nhiêu
+
