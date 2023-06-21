@@ -1,0 +1,41 @@
+version: "3.1"
+
+stories:
+
+- story: aws_the_price
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_price
+  - action: action_aws_price
+  - intent: ask_material
+  - action: action_aws_material
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: aws_the_price path 2
+  steps: 
+  - intent: ask_price
+  - action: action_aws_price
+
+- story: aws_the_material
+  steps:
+  - intent: ask_material
+  - action: action_aws_material
+
+- story: aws_the_color_list
+  steps:
+  - intent: ask_color_list
+  - action: action_aws_color_list
+
+- story: aws_the_color_yn
+  steps:
+  - intent: ask_color_yn
+  - action: action_aws_color_yn
+
+- story: greetings
+  steps:
+  - intent: greet
+  - action: utter_greet

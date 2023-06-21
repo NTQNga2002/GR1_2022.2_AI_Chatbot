@@ -1,0 +1,57 @@
+{
+    "products": [
+      {
+        "product_name": "Áo phông logo",
+        "price": "79.000",
+        "quantity": 110,
+        "color":["xanh","đỏ","tím","cam"],
+        "material": "vải thun",
+        "size": ["XS","S","M","L","XL","XXL"]
+      },
+
+      {
+        "product_name": "Đầm tiểu thư",
+        "price": "100.000",
+        "quantity": 0,
+        "color":["be","cam","đen", "trắng"],
+        "material": "vải voans",
+        "size":["S","M","L","XL"]
+      },
+
+      {
+        "product_name": "Đồ ngủ pijama",
+        "price": "40.000",
+        "quantity":3,
+        "color": ["đỏ","be"],
+        "material": "lụa gấm cao cấp",
+        "size": ["S","M","L","XL"]
+      },
+
+      {
+        "product_name": "Quần hộp 4 túi",
+        "price": "240.000",
+        "quantity":10,
+        "color": ["be","cam","trắng"],
+        "material": "vải kaki",
+        "size": ["S","M","L","XL"]
+      },
+
+      {
+        "product_name": "Đầm maxi nữ",
+        "price": "90.000",
+        "quantity":12,
+        "color": ["đỏ","be","cam"],
+        "material": "vải thun",
+        "size": ["S","M","L","XL"]
+      },
+
+      {
+        "product_name": "Đầm babydoll",
+        "price": "140.000",
+        "quantity":20,
+        "color": ["xanh","be","xanh"],
+        "material": "vải đũi lụa",
+        "size": ["S","M","L","XL"]
+      }
+    ]
+  }

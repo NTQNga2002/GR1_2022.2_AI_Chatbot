@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - ask_price
+  - ask_material
+  - ask_color_list
+  - ask_color_yn
+
+
+entities: 
+  - product_name
+  - price
+  - color
+  - material
+
+slots: 
+  product:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: product_name
+
+  colors: 
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: color
+
+responses:
+  
+  utter_greet:
+  - text: "Xin chào mừng bạn đến với Nana Shop"
+  - text: "Tôi là Nana bot, tôi có thể giúp gì cho bạn "
+  - text: "Chào bạn, tôi là Nana bot, không biết tôi có thể giúp gì cho bạn ạ!"
+  - text: "Chào quý khách, tôi là Nana, tôi rất vui khi được phục vụ bạn. Hãy cho tôi biết bạn muốn hỏi gì nào?"
+
+  utter_goodbye:
+  - text: "Chào bạn, cảm ơn bạn đã ủng hộ ạ!"
+  - text: "Cảm ơn bạn rất nhiều!"
+  - text: "Hẹn gặp lại bạn lần sau ạ!"
+
+  utter_thanks:
+  - text: "Xin chân thành cảm ơn quý khách đã ghé thăm!"
+  - text: "Xin cảm ơn quý khách, nếu có gì sai sót mong bạn bỏ qua"
+  - text: "Cảm ơn bạn đã dành thời gian quan tâm đến sản phẩm của chúng tôi! Chúc bạn một ngày vui vẻ"
+
+
+actions: 
+  - action_aws_price 
+  - action_aws_color_list
+  - action_aws_material
+  - action_aws_color_yn
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

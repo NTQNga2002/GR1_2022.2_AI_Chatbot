@@ -1,0 +1,102 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - xin chào bạn
+    - chào
+    - chào Nana shop
+    - chào Shop
+    - Shop cho mình hỏi
+    - Alo
+    - Shop ơi
+    - Xin chào
+    - Bạn có thể tư vấn cho mình được không
+    - Cho hỏi với shop
+    - cho mình hỏi được không
+    - chào Shop, cho mình hỏi 
+    - こんにちは
+  
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Tạm biệt
+    - Tạm biệt bạn
+
+- intent: thanks
+  examples: |
+    - vâng cảm ơn bạn nhiều
+    - thanks
+    - cảm ơn
+    - xin cảm ơn
+    - cảm ơn Shop đã tư vấn
+    - cảm ơn Nana shop nhé
+    - Cảm ơn bạn nha
+
+
+- intent: ask_price
+  examples: |
+    - [Áo phông logo](product_name) có giá bao nhiêu
+    - giá của [Áo phông logo](product_name) là bao nhiêu
+    - giá [Áo phông logo](product_name) là mấy
+    - xin giá của [Áo phông logo](product_name)
+    - [Áo phông logo](product_name) có giá là bao nhiêu
+    - giá của [Áo phông logo](product_name) như nào shop nhỉ 
+    - mẫu [Áo phông logo](product_name) có giá là bao nhiêu
+    - bao tiền một cái [Áo phông logo](product_name) này vậy
+    - bao nhiêu tiền một cái [Áo phông logo](product_name) này vậy
+
+- intent: ask_color_yn
+  examples: |
+    - sản phẩm [Áo phông logo](product_name) có màu [xanh](color) không 
+    - sản phẩm [Áo phông logo](product_name) có màu [đỏ](color) không
+    - sản phẩm [Áo phông logo](product_name) có màu [tím](color) không
+    - sản phẩm [Áo phông logo](product_name) có màu [đen](color) không
+    - sản phẩm [A](product_name) có màu xanh không 
+    - sản phẩm [A](product_name) có màu đỏ không
+    - sản phẩm [A](product_name) có màu tím không
+    - sản phẩm [A](product_name) có màu đen không
+    - sản phẩm [C](product_name) có màu xanh không 
+    - sản phẩm [C](product_name) có màu đỏ không
+    - sản phẩm [C](product_name) có màu tím không
+    - sản phẩm [C](product_name) có màu đen không
+
+- intent: ask_color_list
+  examples: |
+    - [Áo phông logo](product_name) có những màu nào vậy shop
+    - [Áo phông logo](product_name) có màu nào 
+    - [Áo phông logo](product_name) có những màu gì 
+    - [Áo phông logo](product_name) danh sách màu 
+    - cho mình xin danh sách các màu của [Áo phông logo](product_name)
+    - danh sách các màu của [Áo phông logo](product_name) là gì
+    - [Áo phông logo](product_name) có mấy màu vậy bạn
+    - [Áo phông logo](product_name) có bao nhiêu màu 
+
+- intent: ask_material
+  examples: |
+    - [Áo phông logo](product_name) làm bằng chất liệu gì
+    - [Áo phông logo](product_name) là chất liệu gì
+    - chất liệu của [Áo phông logo](product_name) là gì 
+
+- intent: ask_size_list
+  examples: |
+    - [Áo phông logo](product_name) có những size gì vậy Shop
+    - [Áo phông logo](product_name) có bao nhiêu size vậy
+    - [Áo phông logo](product_name) gồm những size nào
+    - [Áo phông logo](product_name) có những size nào vậy bạn
+  
+
